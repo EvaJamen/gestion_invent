@@ -46,7 +46,7 @@
 		
 		<br>
 		<label for="certification">Certification</label>
-		<input type="radio" name="certification" value="bio" id="bio"><label for="bio">bio</label>
+		<input type="radio" name="certification" value="bio" id="bio" checked><label for="bio">bio</label>
 		<input type="radio" name="certification" value="not bio" id="not bio"><label for="not bio">not bio</label>
 		
 		<br>
@@ -67,7 +67,7 @@
 		
 		<br>
 		<label for="billing_method">Billing method</label>
-		<input type="radio" name="billing_method" value="kg" id="kg"><label for="kg">/kg</label>
+		<input type="radio" name="billing_method" value="kg" id="kg" checked><label for="kg">/kg</label>
 		<input type="radio" name="billing_method" value="unit" id="unit"><label for="unit">/unit</label>
 		
 		<br>
