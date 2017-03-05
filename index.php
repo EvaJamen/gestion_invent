@@ -19,6 +19,22 @@
 	<!-- CREATE FORM TO FILL COMMANDS-->
 <form action="#" method="post">
 	<fieldset>
+		<label for="username">Username</label>
+		<input type="text" name="username" placeholder="username" id="username">
+		<br>
+		
+		<label for="password">Password</label>
+		<input type="password" name="password" size="20" id="password">
+		<br>
+		
+		<br>
+		<input type="reset" value="Reset">
+		
+		<br>
+    	<input type="submit" value="Send">
+	</fieldset>
+	
+	<fieldset>
 		<label for="product">Product</label>
     	<input type="text" name="product" placeholder="Name of product" id="product">
 		<br>
