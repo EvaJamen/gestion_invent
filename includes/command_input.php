@@ -54,7 +54,7 @@
 			//Execute the request and confirm
 		$prepare->execute();
 				
-		print 'Your order has been successfully registered with actually date';
+		print 'Your order has been successfully registered with currently set date';
 				}
 			
 		else{
@@ -105,5 +105,7 @@
 		$_POST['labeling_date'] = '';
 		$_POST['billing_method'] = '';
 		$_POST['price'] = '';
+		
+		print 'It is appear that your form is empty';
 	}
 		
