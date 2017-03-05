@@ -29,39 +29,18 @@
 			$error['origin'] = 'should not be empty';
 		if(empty($lots_quantity))
 			$error['lots_quantity'] = 'should not be empty';
+		if(empty($labeling_date))
+			$_POST['labeling_date'] = date("j/n/Y h:i", time());
 		if(empty($price))
 			$error['price'] = 'should not be empty';
 		
 		// any products error
 		if(empty($error))
 		{
-			// any products error
-		if(empty($labeling_date))
-		{
-			$_POST['labeling_date'] = date("j/n/Y h:i", time());
-				
-			$prepare = $pdo->prepare('INSERT INTO products (product, description, certification, producer, origin, lots_quantity, billing_method, price) VALUES (:product, :description, :certification, :producer, :origin, :lots_quantity, :billing_method, :price)');
-				
-		$prepare->bindValue('product', $_POST['product']);
-		$prepare->bindValue('description', $_POST['description']);
-		$prepare->bindValue('certification', $_POST['certification']);
-		$prepare->bindValue('producer', $_POST['producer']);
-		$prepare->bindValue('origin', $_POST['origin']);
-		$prepare->bindValue('lots_quantity', 	$_POST['lots_quantity']);
-		$prepare->bindValue('billing_method', $_POST['billing_method']);
-		$prepare->bindValue('price', $_POST['price']);
-			
-			//Execute the request and confirm
-		$prepare->execute();
-				
-		print 'Your order has been successfully registered with actually date';
-				}
-			
-		else{
 		//Prepare the request
 			
-		$prepare = $pdo->prepare('INSERT INTO products (product, description, certification, producer, origin, lots_quantity, labeling_date, billing_method, price) VALUES (:product, :description, :certification, :producer, :origin, :lots_quantity, :labeling_date, :billing_method, :price)');
-				
+		$prepare = $pdo->prepare('INSERT INTO products (product, description, certification, producer, origin, lots_quantity, billing_method, price) VALUES (:product, :description, :certification, :producer, :origin, :lots_quantity, :labeling_date :billing_method, :price)');
+
 		$prepare->bindValue('product', $_POST['product']);
 		$prepare->bindValue('description', $_POST['description']);
 		$prepare->bindValue('certification', $_POST['certification']);
@@ -71,16 +50,12 @@
 		$prepare->bindValue('labeling_date', $_POST['labeling_date']);
 		$prepare->bindValue('billing_method', $_POST['billing_method']);
 		$prepare->bindValue('price', $_POST['price']);
-		
-				//Execute the request and confirm
+			
+		//Execute the request, confirm and reset form with default values
 		$prepare->execute();
-				
+		
 		print 'Your order has been successfully registered';
-		}
-
-	}
-	
-		 //reset form with default values	
+			
 		$_POST['product'] 		= '';
 		$_POST['description']   = '';
 		$_POST['certification']    	= '';
@@ -91,6 +66,7 @@
 		$_POST['billing_method'] = '';
 		$_POST['price'] = '';
 			
+		}
 	}
 
 	else

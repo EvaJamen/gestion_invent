@@ -64,7 +64,6 @@
 		<br>
 		<label for="labeling_date">Labeling date</label>
     	<input type="date" name="labeling_date" id="labeling_date">
-		
 		<br>
 		<label for="billing_method">Billing method</label>
 		<input type="radio" name="billing_method" value="kg" id="kg" checked><label for="kg">/kg</label>
