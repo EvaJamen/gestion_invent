@@ -13,7 +13,7 @@
 <head>
     <meta charset="UTF-8">
 	<title>New Order</title>
-	<link rel="stylesheet" href="../styles/style.css" />
+	<link rel="stylesheet" href="../styles/styles.css" />
 </head>
 <body>
 
@@ -28,6 +28,18 @@
 			</nav>
 		</section>
 	</header>
+	
+	<div class="messages success">
+		<?php foreach($success_messages as $_message): ?>
+			<p><?= $_message ?></p>
+		<?php endforeach ?>
+	</div>
+
+	<div class="messages errors">
+		<?php foreach($error_messages as $_key => $_message): ?>
+			<p><?= "$_key : $_message" ?></p>
+		<?php endforeach ?>
+	</div>
 	
 	<!-- CREATE FORM TO FILL COMMANDS-->
 <form action="#" method="post">
@@ -45,9 +57,14 @@
 		</div>
 		
 		<div class="registration">
-			<label for="certification">Bio or not ?</label>
-			<input type="radio" name="certification" value="bio" id="bio" checked><label for="bio"></label>
-			<input type="radio" name="certification" value="not bio" id="not bio"><label for="not bio"></label>
+			<label for="certification">
+				<input type="radio" name="certification" value="bio"  id="bio" checked>
+				bio
+			</label>
+			<label for="certification">
+				<input type="radio" name="certification" value="not bio" id="not bio">
+				not bio
+			</label>
 		</div>
 		
 		<div class="registration">
@@ -72,9 +89,14 @@
 		</div>
 		
 		<div class="registration">
-			<label for="billing_method">/kg or /unit</label>
-			<input type="radio" name="billing_method" value="kg" id="kg" checked><label for="kg"></label>
-			<input type="radio" name="billing_method" value="unit" id="unit"><label for="unit"></label>
+			<label for="billing_method">
+				<input type="radio" name="billing_method" value="kg"  id="kg" checked>
+				/kg
+			</label>
+			<label for="billing_method">
+				<input type="radio" name="billing_method" value="unit" id="unit">
+				/unit
+			</label>
 		</div>
 		
 		<div class="registration">
@@ -86,11 +108,12 @@
 		<input type="reset" value="Reset">
 		
 		<br>
-    	<input type="submit" value="Send">
+    	<input type="submit" value="Send" onclick="afficher()">
 		
 	</fieldset>
 </form>
 	
-	
+	<script>
+	</script>
 </body>
 </html>

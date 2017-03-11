@@ -3,7 +3,6 @@
 
 	//Array to check error
 	$error = array();
-	$success = array();
 	
 	if(!empty($_POST))
 	{
@@ -55,7 +54,7 @@
 			//Execute the request and confirm
 		$prepare->execute();
 				
-		$success[]='ok';
+		echo "<script>alert(\"Your order has been successfully registered\")</script>"; 
 				}
 			
 		else{
@@ -75,11 +74,13 @@
 		
 				//Execute the request and confirm
 		$prepare->execute();
-		}
 		
-		$success[]='ok';
+		echo "<script>alert(\"Your order has been successfully registered\")</script>";
+			
+		}
+
+			
 	}
-	
 		 //reset form with default values	
 		$_POST['product'] 		= '';
 		$_POST['description']   = '';
@@ -104,13 +105,4 @@
 		$_POST['labeling_date'] = '';
 		$_POST['billing_method'] = '';
 		$_POST['price'] = '';
-	}
-
-	if ($success)
-	{
-		print 'Your order has been successfully registered';
-	}
-	else
-	{
-		print 'It is appear that your form is empty';
 	}

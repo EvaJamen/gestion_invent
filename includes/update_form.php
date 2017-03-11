@@ -13,7 +13,7 @@
 <head>
     <meta charset="UTF-8">
 	<title>New Order</title>
-	<link rel="stylesheet" href="../styles/style.css" />
+	<link rel="stylesheet" href="../styles/styles.css" />
 </head>
 <body>
 
@@ -32,11 +32,11 @@
 	<!-- CREATE FORM TO UPDATE COMMANDS-->
 <form action="#" method="post">
 		<div class="registration">
-			<label for="lots_quantity">Stock</label>
-    		<input type="number" name="lots_quantity" placeholder="New stock" id="lots_quantity">
+			<label for="product">Stock</label>
+    		<input type="text" name="product" placeholder="New product" id="product">
 		</div>
 		<div class="registration">
-			<label for="new">Producer</label>
+			<label for="producer">Producer</label>
     		<input type="text" name="producer" placeholder="Producer name" id="producer">
 		</div>
 		<input type="submit" value="Send">
