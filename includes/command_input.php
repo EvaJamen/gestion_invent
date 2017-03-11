@@ -3,6 +3,7 @@
 
 	//Array to check error
 	$error = array();
+	$success = array();
 	
 	if(!empty($_POST))
 	{
@@ -54,7 +55,7 @@
 			//Execute the request and confirm
 		$prepare->execute();
 				
-		print 'Your order has been successfully registered with currently set date';
+		$success[]='ok';
 				}
 			
 		else{
@@ -74,10 +75,9 @@
 		
 				//Execute the request and confirm
 		$prepare->execute();
-				
-		print 'Your order has been successfully registered';
 		}
-
+		
+		$success[]='ok';
 	}
 	
 		 //reset form with default values	
@@ -90,7 +90,6 @@
 		$_POST['labeling_date'] = '';
 		$_POST['billing_method'] = '';
 		$_POST['price'] = '';
-			
 	}
 
 	else
@@ -105,7 +104,13 @@
 		$_POST['labeling_date'] = '';
 		$_POST['billing_method'] = '';
 		$_POST['price'] = '';
-		
+	}
+
+	if ($success)
+	{
+		print 'Your order has been successfully registered';
+	}
+	else
+	{
 		print 'It is appear that your form is empty';
 	}
-		

@@ -18,11 +18,15 @@
         	<nav class="container">
 				<ul class="menu">
             		<li><a href="includes/command_form.php" title="menu">NEW ORDER</a></li>
-					<li><a href="#" title="menu">MODIFY ORDER</a></li>
-					<li><a href="#" title="menu">ERASE ORDER</a></li>
+					<li><a href="includes/update_form.php" title="menu">MODIFY ORDER</a></li>
+					<li><a href="includes/inventory_base.php" title="menu">INVENTORY</a></li>
 				</ul>
 			</nav>
+			<div>
+				
+			</div>
 		</section>
+		
 	</header>
 	<footer>
 	

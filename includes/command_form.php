@@ -22,8 +22,8 @@
         	<nav class="container">
 				<ul class="menu">
             		<li><a href="#" title="menu">NEW ORDER</a></li>
-					<li><a href="#" title="menu">MODIFY ORDER</a></li>
-					<li><a href="#" title="menu">ERASE ORDER</a></li>
+					<li><a href="update_form.php" title="menu">MODIFY ORDER</a></li>
+					<li><a href="inventory_base.php" title="menu">INVENTORY</a></li>
 				</ul>
 			</nav>
 		</section>
@@ -32,6 +32,7 @@
 	<!-- CREATE FORM TO FILL COMMANDS-->
 <form action="#" method="post">
 	<fieldset>
+		
 		<div class="registration">
 			<label for="product">Product</label>
     		<input type="text" name="product" placeholder="Name of product" id="product">
@@ -53,7 +54,7 @@
 			<label for="producer">Producer</label>
     		<input type="text" name="producer" placeholder="Name of producer" id="producer">
 		</div>
-		
+
 		<div class="registration">
 			<label for="origin">Origin</label>
     		<input type="text" name="origin" placeholder="Origin of your product" id="origin">
