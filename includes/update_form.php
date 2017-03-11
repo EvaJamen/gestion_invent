@@ -32,13 +32,19 @@
 	<!-- CREATE FORM TO UPDATE COMMANDS-->
 <form action="#" method="post">
 		<div class="registration">
-			<label for="product">Stock</label>
-    		<input type="text" name="product" placeholder="New product" id="product">
+			<label for="lots_quantity">Stock</label>
+    		<input type="number" name="lots_quantity" placeholder="New stock" id="lots_quantity">
 		</div>
 		<div class="registration">
 			<label for="producer">Producer</label>
     		<input type="text" name="producer" placeholder="Producer name" id="producer">
 		</div>
+
+		<div class="registration">
+			<label for="product">Product</label>
+    		<input type="text" name="product" placeholder="Product name" id="product">
+		</div>
+
 		<input type="submit" value="Send">
     </form>
 	
