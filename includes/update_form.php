@@ -13,14 +13,15 @@
 <head>
     <meta charset="UTF-8">
 	<title>New Order</title>
-	<link rel="stylesheet" href="../style/style.css" />
+	<link rel="stylesheet" href="../src/css/style.css" />
 </head>
 <body>
-
+	<div class="container">
 	<header>
 		<section id="topBar">
         	<nav class="container">
 				<ul class="menu">
+					<li><a href="../index.php" title="menu">HOME</a></li>
             		<li><a href="command_form.php" title="menu">NEW ORDER</a></li>
 					<li><a href="#" title="menu">MODIFY ORDER</a></li>
 					<li><a href="inventory_base.php" title="menu">INVENTORY</a></li>
@@ -51,6 +52,6 @@
 		<input type="submit" value="Send">
     </form>
 	
-	
+	</div>
 </body>
 </html>
