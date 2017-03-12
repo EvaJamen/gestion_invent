@@ -1,8 +1,8 @@
 <?php
 
-	//CONNECT TO PHPMADMIN
+	//CONNECT TO MY BDD
 
-	//connect variables
+	//Define the BDD and the user
 	define('DB_HOST','localhost');
 	define('DB_NAME','gestion_invent');
 	define('DB_USER','root');

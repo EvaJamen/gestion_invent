@@ -1,70 +1,69 @@
-body{
+body {
 	font-family: "Futura", sans-serif;
+	margin:auto;
+	background-color:blanchedalmond;
+}
+
+.container {
+	width:960px;
 	margin:auto;
 	background-color:#24445C;
 }
 
-.container{
-  width:960px;
-  margin:auto;
-}
 /*HOME*/
-h1{
-	
-}
-
-/*MENU*/
-
-nav ul{
-  margin: 0;
-  padding: 0;
-  list-style: none;
-}
-
-.subMenu{
-  display: none;
-}
-
-.menu > li{
-  display: inline-block;
-  width: 160px;
-  background: #24445C;
-}
-
-.menu > li a{
-  text-decoration: none;
-  padding: 25px 5px;
-  display: block;
-  color: white;
-  text-transform: uppercase;
-  text-align: center;
-}
-
-.menu > li:hover{
-  background-color: white;
-}
-
-.menu > li:hover a{
-  color: #24445C;
-}
-
-/*HOME*/
-h1{
+h1 {
 	color: #A8BACE;
 	text-align: center;
 	margin-top: 150px;
 	font-size: 40px;
+	margin-bottom: 150px;
+}
+
+/*MENU*/
+nav ul {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+	border: 2px solid #53687E;
+}
+
+.subMenu {
+	display: none;
+}
+
+.menu > li {
+	display: inline-block;
+	width: 160px;
+	background: #24445C;
+}
+
+.menu > li a {
+	text-decoration: none;
+	padding: 25px 5px;
+	display: block;
+	color: white;
+	text-transform: uppercase;
+	text-align: center;
+}
+
+.menu > li:hover {
+	background-color: white;
+}
+
+.menu > li:hover a {
+	color: #24445C;
 }
 
 /*FORMS*/
-.form_style{
-    width: 900px;
+.form_style {
+	width: 800px;
     font-size: 16px;
     background: #495C70;
     padding: 30px 30px 30px 30px;
     border: 5px solid #53687E;
 	margin: auto;
 	margin-top: 50px;
+	margin-bottom: 50px;
 }
 
 input[type=submit],
@@ -73,15 +72,14 @@ input[type=number],
 input[type=text],
 textarea,
 label,
-legend
-{
+legend {
     font-family: Georgia, "Times New Roman", Times, serif;
     font-size: 16px;
     color: #fff;
 
 }
 
-textarea{
+textarea {
     font-style: italic;
     padding: 0px 0px 0px 0px;
     background: transparent;
@@ -99,15 +97,14 @@ registration {
     margin-bottom: 10px;
 }
 
-label{
+label {
     display: inline-block;
     float: left;
     width: 150px;
 }
 
 input[type=text],
-input[type=number]
-{
+input[type=number] {
     background: transparent;
     border: none;
     border-bottom: 1px dashed #83A4C5;
@@ -132,35 +129,34 @@ textarea{
 
 textarea:focus, 
 input[type=text]:focus,
-input[type=number]:focus
-{
-    border-bottom: 1px dashed #D9FFA9;
+input[type=number]:focus {
+ 	border-bottom: 1px dashed #D9FFA9;
 }
 
 input[type=submit],
-input[type=reset]
-{
+input[type=reset] {
     background: #576E86;
     border: none;
     padding: 8px 10px 8px 10px;
     border-radius: 5px;
     color: #A8BACE;
+	margin-bottom: 5px;
+	width: 100%;
 }
 
-input[type=date]{
-background: #fff;
-color: #576E86;
-font-style: italic;
+input[type=date] {
+	background: #fff;
+	color: #576E86;
+	font-style: italic;
 }
 
-input[type=date]:hover{
-background: #576E86;
-color: #fff;
+fieldset {
+	margin-bottom: 20px;
 }
 
-input[type=submit]:hover,
-input[type=reset]:hover{
-background: #394D61;
+legend {
+	font-style: italic;
+	font-size: 15px;
 }
 
 span {
@@ -169,29 +165,44 @@ span {
     color: #fff;
 }
 
+input[type=date]:hover {
+	background: #576E86;
+	color: #fff;
+}
+
+input[type=submit]:hover,
+input[type=reset]:hover {
+	background: #394D61;
+}
+
 /*TABLE OF INVENTORY*/
 
-table{
-width:1104px;
-margin:auto;
-border-collapse:collapse;
-color: #FFFFFF;
-background-color:#CECECE;
-border: 2px solid white; /*suppression cadre exterieur-Flat design*/
+table {
+	width:960px;
+	margin:auto;
+	border-collapse:collapse;
+	color: #FFFFFF;
+	background: #576E86;
+	border: 2px solid white;
 }
 
-td{
-padding:5px;
-border-width:1px;
-border-style:solid;
-border-color:#048B9A;
-background-color:#CECECE;
-width:138px;
-height:138px;
-text-align: center;
+td {
+	padding:5px;
+	border-width:1px;
+	border-style:solid;
+	border-color: #495C70;
+	background: #576E86;
+	width:138px;
+	height:138px;
+	text-align: center;
 }
 
-thead{
-background:#048B9A;
-text-transform:uppercase;
+/*FOOTER*/
+.footer {
+	background:white;
+	height: 150px;
+	width:100%;
+	color:#24445C;
+	text-align:center;
+	padding-top:10px;
 }
