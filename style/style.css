@@ -1,6 +1,114 @@
-/*HOME*/
 body{
 	font-family: "Arial", sans-serif;
-	margin:0;
-	font-size: 20px;
+	margin:auto;
+}
+
+.form_style{
+    width: 450px;
+    font-size: 16px;
+    background: #495C70;
+    padding: 30px 30px 15px 30px;
+    border: 5px solid #53687E;
+}
+
+input[type=submit],
+input[type=reset],
+input[type=number],
+input[type=text],
+input[type=date],
+textarea,
+label,
+legend
+{
+    font-family: Georgia, "Times New Roman", Times, serif;
+    font-size: 16px;
+    color: #fff;
+
+}
+
+textarea{
+    font-style: italic;
+    padding: 0px 0px 0px 0px;
+    background: transparent;
+    outline: none;
+    border: none;
+    border-bottom: 1px dashed #83A4C5;
+    width: 275px;
+    overflow: hidden;
+    resize:none;
+    height:20px;
+}
+
+registration {
+    display:block;
+    margin-bottom: 10px;
+}
+
+label{
+    display: inline-block;
+    float: left;
+    width: 150px;
+}
+
+input[type=text],
+input[type=number] 
+{
+    background: transparent;
+    border: none;
+    border-bottom: 1px dashed #83A4C5;
+    width: 275px;
+    outline: none;
+    padding: 0px 0px 0px 0px;
+    font-style: italic;
+}
+
+textarea{
+    font-style: italic;
+    padding: 0px 0px 0px 0px;
+    background: transparent;
+    outline: none;
+    border: none;
+    border-bottom: 1px dashed #83A4C5;
+    width: 275px;
+    overflow: hidden;
+    resize:none;
+    height:20px;
+}
+
+textarea:focus, 
+input[type=text]:focus,
+input[type=number]:focus
+{
+    border-bottom: 1px dashed #D9FFA9;
+}
+
+input[type=submit],
+input[type=reset]{
+    background: #576E86;
+    border: none;
+    padding: 8px 10px 8px 10px;
+    border-radius: 5px;
+    color: #A8BACE;
+}
+
+input[type=date]{
+background: #fff;
+color: #576E86;
+font-style: italic;
+}
+
+input[type=date]:hover{
+background: #576E86;
+color: #fff;
+}
+
+input[type=submit]:hover,
+input[type=reset]:hover{
+background: #394D61;
+}
+
+span {
+	font-style: italic;
+	font-size: 12px;
+    color: #fff;
 }

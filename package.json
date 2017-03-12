@@ -1,5 +1,5 @@
 {
-  "name": "gestionnaire_inventaire",
+  "name": "gestion_invent",
   "version": "1.0.0",
   "description": "gestion & invent tool",
   "main": "index.js",

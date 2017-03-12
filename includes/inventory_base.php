@@ -31,7 +31,7 @@
 		</section>
 	</header>
 	
-	<form action="#" method="post">
+	<form class="form_style" action="#" method="post">
 	<input type="submit" value="Sort by product" name='sort'>
 	<input type="submit" value="Sort by producer" name='sort'>
 	<input type="submit" value="Sort by id" name='sort'>
@@ -43,6 +43,20 @@
 		$products = $query->fetchAll();
 		if($_POST['sort']=='Sort by product')
 		foreach($products as $_show): ?>
+		<thead>
+        <tr>
+			<td>Id</th>
+			<td>Product</th>
+			<td>Description</th>
+			<td>Certification</th>
+			<td>Producer</th>
+			<td>Origin</th>
+			<td>Quantity</th>
+			<td>Labelling date</th>
+			<td>Billing method</th>
+			<td>Price</th>
+        </tr>
+      </thead>
 		<tr>
 			<td><?= $_show->id ?></td>
 			<td><?= $_show->product ?></td>
@@ -51,7 +65,7 @@
 			<td><?= $_show->producer ?></td>
 			<td><?= $_show->origin ?></td>
 			<td><?= $_show->lots_quantity ?></td>
-			<td><?= $_show->labeling_dat ?></td>
+			<td><?= $_show->labeling_date ?></td>
 			<td><?= $_show->billing_method ?></td>
 			<td><?= $_show->price ?></td>
 		</tr>

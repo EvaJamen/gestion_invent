@@ -30,7 +30,7 @@
 	</header>
 	
 	<!-- CREATE FORM TO UPDATE COMMANDS-->
-<form action="#" method="post">
+<form class="form_style" action="#" method="post">
 		<div class="registration">
 			<label for="lots_quantity">Stock</label>
     		<input type="number" name="lots_quantity" placeholder="New stock" id="lots_quantity">
@@ -45,6 +45,9 @@
     		<input type="text" name="product" placeholder="Product name" id="product">
 		</div>
 
+		<br>
+		<input type="reset" value="Reset">
+		<br>
 		<input type="submit" value="Send">
     </form>
 	

@@ -42,9 +42,9 @@
 	</div>
 	
 	<!-- CREATE FORM TO FILL COMMANDS-->
-<form action="#" method="post">
+<form class="form_style" action="#" method="post">
 	<fieldset>
-		
+		<legend>New order</legend>
 		<div class="registration">
 			<label for="product">Product</label>
     		<input type="text" name="product" placeholder="Name of product" id="product">
@@ -108,7 +108,7 @@
 		<input type="reset" value="Reset">
 		
 		<br>
-    	<input type="submit" value="Send" onclick="afficher()">
+    	<input type="submit" value="Send"">
 		
 	</fieldset>
 </form>
