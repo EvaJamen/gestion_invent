@@ -10,7 +10,7 @@
 <head>
     <meta charset="UTF-8">
 	<title>Home</title>
-	<link rel="stylesheet" href="styles/style.css" />
+	<link rel="stylesheet" href="style/style.css" />
 </head>
 <body>
 	<header>

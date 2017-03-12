@@ -13,7 +13,7 @@
 <head>
     <meta charset="UTF-8">
 	<title>New Order</title>
-	<link rel="stylesheet" href="../styles/styles.css" />
+	<link rel="stylesheet" href="../style/style.css" />
 </head>
 <body>
 
