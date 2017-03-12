@@ -1,0 +1,12 @@
+Création d'un site de gestion et d'inventaire qui permet à l'utilisateur de :
+-Rentrer une nouvelle commade
+-Modifier le stock d'une commande en rentrant le nom du produit et du producteur
+-Afficher l'inventaire par ordre alphabétique des produits, par ordre alphabétique des producteurs, par ordre des id.
+
+Tentative de création d'une session utilisateur, mais je n'ai réussi qu'à créer le formulaire correspondant
+
+Utilisation de Gulp pour minifier mon css
+
+Utilisation de Github pour versionner mon projet
+
+Modification de mon projet pour y appliquer le processus de routing vu en cours. J'y suis arrivé.

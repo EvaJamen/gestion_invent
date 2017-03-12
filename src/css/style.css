@@ -33,7 +33,7 @@ nav ul {
 
 .menu > li {
 	display: inline-block;
-	width: 160px;
+	width: 150px;
 	background: #24445C;
 }
 
@@ -175,7 +175,7 @@ input[type=reset]:hover {
 	background: #394D61;
 }
 
-/*TABLE OF INVENTORY*/
+/*TABLE OF INVENTORY AND DELETE*/
 
 table {
 	width:960px;
@@ -195,6 +195,15 @@ td {
 	width:138px;
 	height:138px;
 	text-align: center;
+}
+
+a{
+	text-decoration: none;
+	color: #495C70;
+}
+
+a:hover{
+	color: #CECECE;
 }
 
 /*FOOTER*/
